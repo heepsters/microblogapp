@@ -15,9 +15,20 @@ body {
 	height: 500px;
 	letter-spacing: 2px;
 }
-.freesignup img {
+.navbar-default {
+	background-color: none!important;
+}
+
+a.navbar-brand {
+	padding: 0 10px;
+}
+.navbar-header img {
 	width: 50px;
-	height: 40px;
+	height: 50px;
+}
+a#logoimg img {
+	width: 80px;
+	height: 80px;
 }
 .freesignup {
 	width: 400px;
@@ -75,3 +86,5 @@ input#signupbtn:hover {
 	bottom: 0;
 	position: absolute;
 }
+
+
