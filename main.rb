@@ -55,6 +55,10 @@ puts response.headers
 end
 get '/veryify/:user_id' do 
 	puts "HERE IS THE USER ID #{params[:user_id]}"
+	@user = User.find params[:user_id]
+	@user.verified = true
+	@user.save
+	redirect '/home_feed'
 end
 
 get '/user_settings'  do 

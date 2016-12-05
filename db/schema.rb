@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161205185032) do
+ActiveRecord::Schema.define(version: 20161205224936) do
 
   create_table "users", force: :cascade do |t|
     t.string   "fname"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20161205185032) do
     t.string   "socialmedia"
     t.string   "links"
     t.datetime "lastsignin"
+    t.string   "confirm"
   end
 
 end
