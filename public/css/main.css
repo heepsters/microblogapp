@@ -18,7 +18,16 @@ body {
 .navbar-default1 {
 	background-color: none;
 }
-
+span.icon-bar {
+	background-color: #333;
+}
+.nav.navbar-nav.navbar-right a {
+	color: #333;
+}
+.nav.navbar-nav.navbar-right a:hover {
+	border-bottom: 1px solid #333;
+	background-color: inherit;
+}
 a.navbar-brand {
 	padding: 5px 10px;
 }
@@ -68,7 +77,7 @@ input#signupbtn {
 	height: auto;
 	padding: 36.5px;
 	margin: 20px 0;
-	background-color: #00ff00;
+	background-color: #00ff99;
 	border: none;
 	font-size: 20px;
 	color: #666;
