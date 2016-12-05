@@ -1,1 +1,77 @@
-main.css
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+	border: 0;
+	margin: 0;
+	font-family: 'Raleway', sans-serif!important;
+	width: 100%;
+	background: white; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left, #ffc266 , #80ffe5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ffc266 , #80ffe5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ffc266 , #80ffe5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ffc266 , #80ffe5); /* Standard syntax (must be last) */;
+	color: #333;
+	width: 100%;
+	height: 500px;
+	letter-spacing: 2px;
+}
+.freesignup img {
+	width: 50px;
+	height: 40px;
+}
+.freesignup {
+	width: 400px;
+	height: 425px;
+	background-color: inherit;
+	padding: 0 0 30px;
+	margin: 0 auto;
+	text-align: center;
+}
+.freesignup h2 {
+	margin: 0;
+	width: 100%;
+	padding: 24.5px 0;
+	background-color: inherit;
+	color: #666;
+}
+.freesignup input {
+	width: 350px;
+	height: 47px;
+	padding: 0 25px;
+	outline: none;
+	font-size: 12px;
+	color: black;
+	border: none;
+	border-bottom: 1.7px solid grey;
+	margin: 5px 0;
+	font-size: 15px;
+	letter-spacing: 2px;
+	background-color: inherit;
+}
+.freesignup input:hover {
+	background-color: #ffffcc;
+	color: black;
+}
+input#signupbtn {
+	width: 100%;
+	height: auto;
+	padding: 36.5px;
+	margin: 20px 0;
+	background-color: #00ff00;
+	border: none;
+	font-size: 20px;
+	color: #666;
+}
+input#signupbtn:hover {
+	background-color: #ffcce6;
+	color: white;
+}
+
+.footer1 {
+	width: 100%;
+	padding: 2px 0;
+	text-align: center;
+	color: white;
+	bottom: 0;
+	position: absolute;
+}
