@@ -7,18 +7,9 @@ enable :sessions
 set :database, "sqlite3:blog.sqlite3"
 require './models'
 
+#########################################################################
 get '/'  do 
-	erb :homepage
-end
-
-get '/create_account'  do 
 	erb :create_account
-end
-
-get '/home_feed' do
-	if :sessions[user_id]
-		User.find(session[user_id])
-	end
 end
 
 post '/create_account' do 
@@ -67,17 +58,27 @@ get '/veryify/:user_id' do
 	@user.save
 	redirect '/home_feed'
 end
+######################################################################
+get '/sign_in'  do 
+	erb :sign_in
+end
 
+ 
+post '/sign-in' do   
+	@user = User.where(email: params[:email]).first   
+	if @user.password == params[:password]     
+		redirect '/home_feed'   
+	else     
+		redirect '/sign_in'   
+	end 
+end
+######################################################################
 get '/user_settings'  do 
 	erb :user_settings
 end
 
 post '/user_settings' do  
 
-end
-
-get '/sign_in'  do 
-	erb :sign_in
 end
 
 get '/home_feed'  do 
