@@ -12,18 +12,13 @@ get '/'  do
 	erb :create_account
 end
 
-<<<<<<< HEAD
 def current_user
 	if session[:user_id]
 		User.find(session[:user_id])
 	end
 end
 
-post '/create_account' do   
-=======
 post '/create_account' do 
->>>>>>> 45488400d59929ef1c16442dcc00922867a5005c
-
 	puts params.inspect
 	@email = params[:email]
 	@user = User.create(params)
