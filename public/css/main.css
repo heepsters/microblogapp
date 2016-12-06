@@ -73,10 +73,10 @@ a#logoimg img {
 	color: black;
 }
 input#signupbtn {
-	width: 100%;
+	width: 350px;
 	height: auto;
-	padding: 36.5px;
-	margin: 20px 0;
+	padding: 36.5px 0px;
+	margin: 40px 0;
 	background-color: #00ff99;
 	border: none;
 	font-size: 20px;
@@ -95,5 +95,112 @@ input#signupbtn:hover {
 	bottom: 0;
 	position: absolute;
 }
+
+/* home feed page styles */
+.feedin {
+	width: 500px;
+	height: auto;
+	margin: 0 auto;
+	border-radius: 20px;
+	background-color: ;
+	padding: 30px;
+}
+
+.postin {
+	width: 100%;
+	height: 230px;
+	background-color: rgba(255,255,255, 0.7);
+
+	padding: 0px 20px 0;
+	text-align: center;
+
+}
+.postin h4 {
+	display: inline;
+	margin: 0 10px;
+}
+
+.postin img {
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	border: 0px;
+	margin: 10px 0;
+}
+.postin textarea {
+	width: 100%;
+	height: 100px;
+	padding: 10px 25px;
+	border: none;
+	outline: none;
+	border-radius: 20px;
+	color: black;
+	resize: none;
+}
+.postin textarea:hover {
+	background-color: #9e9;
+	color: white;
+}
+.postarea {
+	width: 100%;
+	height: 100%;
+	display: inline;
+}
+button.postbtn {
+	width: 80px;
+	height: 30px;
+	float: right;
+	border: none;
+	letter-spacing: 2px;
+	background-color: rgba(122, 225, 151, .9);
+	color: white;
+	border-radius: 3px;
+	outline: none;
+	margin-top: 5px;
+}
+
+button.postbtn:hover{
+	background-color: #999;
+	color: white;
+}
+/*  media queries */
+
+@media (max-width: 458px) {
+	.feedin{
+		width: 100%;
+		padding-left: 0px;
+		padding-right: 0px;
+		border-radius: 0px;
+	}
+	.postin {
+		border-radius: 0px;
+	}
+	textarea.postin{
+		width: 100%;
+		border-radius: 0px;
+	}
+
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
