@@ -86,6 +86,7 @@ post '/sign_in' do
 end  
 ######################################################################
 get '/home_feed'  do 
+    @posts = Post.all
     erb :home_feed
 end
 
@@ -93,6 +94,13 @@ post '/home_feed' do
 
 
 end
+
+post '/save_post' do 
+  @post = Post.create(content: params[:content], user_id: current_user.id)
+  @user = User.fname
+  
+end
+
 ######################################################################
 get '/user_settings'  do 
     erb :user_settings
@@ -101,11 +109,11 @@ end
 post '/user_settings' do  
 end
 
-
+######################################################################
 get '/user_profile'  do 
     erb :user_profile
 end
-
+end
 
 
 
