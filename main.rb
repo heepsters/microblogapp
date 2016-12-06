@@ -56,13 +56,19 @@ puts response.status_code
 puts response.body
 puts response.headers
 end
+
 get '/verify' do 
     puts "HERE IS THE USER ID #{params[:user_id]}"
     @user = User.find params[:user_id]
     @user.verified = true
     @user.save
-    redirect '/home_feed'
+    redirect '/user_settings'
 end
+
+post '/please_verify' do  
+  erb :verify
+end
+
 ######################################################################
 get '/sign_in'  do 
     erb :sign_in
