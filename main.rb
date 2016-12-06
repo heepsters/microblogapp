@@ -2,6 +2,7 @@ require 'sinatra'
 require 'sinatra/activerecord'
 require 'sendgrid-ruby'
 include SendGrid
+enable :sessions
 
 set :database, "sqlite3:blog.sqlite3"
 require './models'
@@ -12,6 +13,12 @@ end
 
 get '/create_account'  do 
 	erb :create_account
+end
+
+get '/home_feed' do
+	if :sessions[user_id]
+		User.find(session[user_id])
+	end
 end
 
 post '/create_account' do 
