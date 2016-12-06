@@ -2,6 +2,7 @@ require 'sinatra'
 require 'sinatra/activerecord'
 require 'sendgrid-ruby'
 include SendGrid
+enable :sessions
 
 set :database, "sqlite3:blog.sqlite3"
 require './models'
@@ -10,7 +11,15 @@ require './models'
 get '/'  do 
 	erb :create_account
 end
+
+def current_user
+	if session[:user_id]
+		User.find(session[:user_id])
+	end
+end
+
 post '/create_account' do 
+
 	puts params.inspect
 	@email = params[:email]
 	@user = User.create(params)
@@ -62,14 +71,15 @@ get '/sign_in'  do
 end
 
  
-post '/sign-in' do   
+post '/sign_in' do   
 	@user = User.where(email: params[:email]).first   
-	if @user.password == params[:password]     
-		redirect '/home_feed'   
+	if @user && @user.password == params[:password]   
+	session[:user_id] = @user.id  
+		erb :home_feed   	
 	else     
-		redirect '/sign_in'   
+		erb :sign_in   
 	end 
-end
+end 	
 ######################################################################
 get '/user_settings'  do 
 	erb :user_settings
