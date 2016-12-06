@@ -85,6 +85,15 @@ post '/sign_in' do
 	 end 
 end  
 ######################################################################
+get '/home_feed'  do 
+    erb :home_feed
+end
+
+post '/home_feed' do
+
+
+end
+######################################################################
 get '/user_settings'  do 
     erb :user_settings
 end
@@ -92,9 +101,6 @@ end
 post '/user_settings' do  
 end
 
-get '/home_feed'  do 
-    erb :home_feed
-end
 
 get '/user_profile'  do 
     erb :user_profile
