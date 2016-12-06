@@ -8,7 +8,6 @@ body {
 	background-color: #004e66!important;
 	color: #333;
 	width: 100%;
-	height: 500px;
 	letter-spacing: 2px;
 }
 .navbar-default1 {
@@ -86,13 +85,13 @@ input#signupbtn:hover {
 	color: white;
 }
 
-.footer1 {
+.footer {
 	width: 100%;
 	padding: 2px 0;
 	text-align: center;
-	color: black;
-	bottom: 0;
+	color: white!important;
 	position: absolute;
+	bottom: 0;
 }
 
 /* home feed page styles */
@@ -102,14 +101,14 @@ input#signupbtn:hover {
 	margin: 0 auto;
 	border-radius: 20px;
 	background-color: ;
-	padding: 30px;
+	padding: 10px 30px;
 }
 
 .postin {
 	width: 100%;
 	height: 230px;
 	background-color: rgba(255,255,255, 0.7);
-
+	border-radius: 3px;
 	padding: 0px 20px 0;
 	text-align: center;
 
@@ -132,7 +131,7 @@ input#signupbtn:hover {
 	padding: 10px 25px;
 	border: none;
 	outline: none;
-	border-radius: 20px;
+	border-radius: 5px;
 	color: black;
 	resize: none;
 }
@@ -151,7 +150,7 @@ button.postbtn {
 	float: right;
 	border: none;
 	letter-spacing: 2px;
-	background-color: rgba(122, 225, 151, .9);
+	background-color: #fcbe32;
 	color: white;
 	border-radius: 3px;
 	outline: none;
@@ -159,9 +158,50 @@ button.postbtn {
 }
 
 button.postbtn:hover{
-	background-color: #999;
+	background-color: #ff5f2e;
+	color: white;
+	box-shadow: 1px 1px 1px #333;
+}
+/* profile page styles */
+
+.profilepage {
+	width: 750px;
+	height: 300px;
+	background-color: rgba(225,	238,246, .9);
+	text-align: center;
+	margin: 80px auto 10px;
+	border-radius: 2px;
+	color: black;
+	padding: 80px 100px;
+}
+.profilepage img {
+	width: 180px;
+	height: 180px;
+	border-radius: 100%;
+	border: 5px solid white;
+	box-shadow: 1px 1px 1px #333;
+	position: absolute;
+	margin-left: -8%;
+	top: 40px;
+}
+.proimage img {
+	width: 100%;
+	height: auto;
+	background-size: cover;
+}
+
+
+.verifying {
+	text-align: center;
+}
+.verifying h1 {
 	color: white;
 }
+
+
+
+
+
 /*  media queries */
 
 @media (max-width: 458px) {

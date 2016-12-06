@@ -94,17 +94,21 @@ post '/home_feed' do
 
 end
 ######################################################################
-get '/user_settings'  do 
+get '/user_settings'  do
+    @user = current_user
     erb :user_settings
 end
 
 post '/user_settings' do  
+    current_user.update_attributes(params)
+    redirect '/user_profile'
 end
 
 
 get '/user_profile'  do 
     erb :user_profile
 end
+
 
 
 
