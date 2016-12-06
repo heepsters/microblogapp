@@ -9,3 +9,7 @@ class User < ActiveRecord::Base
 	# 	end
 	# end
 end
+
+class Post < ActiveRecord::Base
+end
+
