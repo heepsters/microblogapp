@@ -18,7 +18,7 @@ def current_user
 	end
 end
 
-post '/create_account' do 
+post '/create_account' do   
 
 	puts params.inspect
 	@email = params[:email]
