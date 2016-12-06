@@ -12,12 +12,6 @@ get '/'  do
 	erb :create_account
 end
 
-def current_user
-	if session[:user_id]
-		User.find(session[:user_id])
-	end
-end
-
 post '/create_account' do 
 
 	puts params.inspect
