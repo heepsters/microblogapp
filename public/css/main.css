@@ -6,10 +6,10 @@ body {
 	font-family: 'Raleway', sans-serif!important;
 	width: 100%;
 	background: white; /* For browsers that do not support gradients */    
-    background: -webkit-linear-gradient(left, #ffc266 , #80ffe5); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #ffc266 , #80ffe5); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #ffc266 , #80ffe5); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #ffc266 , #80ffe5); /* Standard syntax (must be last) */;
+    background: -webkit-linear-gradient(left, #ffc266 , #EBAE13); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ffc266 , #EBAE13); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ffc266 , #EBAE13); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ffc266 , #EBAE13); /* Standard syntax (must be last) */;
 	color: #333;
 	width: 100%;
 	height: 500px;
@@ -73,7 +73,7 @@ a#logoimg img {
 	color: black;
 }
 input#signupbtn {
-	width: 100%;
+	width: 350px;
 	height: auto;
 	padding: 36.5px;
 	margin: 20px 0;
@@ -95,5 +95,96 @@ input#signupbtn:hover {
 	bottom: 0;
 	position: absolute;
 }
+
+.feedin {
+	width: 600px;
+	height: auto;
+
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px 20px;
+}
+.postin {
+	width: 100%;
+	height: auto;
+	background:rgba(255,255,255, 0.5);
+	padding: 0 20px;
+	border-radius: 2px;
+}
+.postin img {
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	border: none;
+	margin: 10px;
+
+}
+.postin h4 {
+	display: inline;
+}
+
+.postarea textarea {
+	width: 100%;
+	height: 125px;
+	outline: none;
+	border: none;
+	resize: none;
+	padding: 40px 30px;
+	border-radius: 2px;
+}
+
+.postarea textarea:hover {
+	background:rgba(255,155,255, 0.2);
+}
+button.postbtn {
+	margin: 10px;
+	width: 100px;
+	height: 30px;
+	border: 0;
+	background-color: rgba(25,125,223, .5);
+	border-radius: 3px;
+	letter-spacing: 2px;
+	color: white;
+}
+
+button.postbtn:hover {
+	background-color: rgba(125,25,23, .5);
+	color: white;
+}
+
+
+/* media queries */
+@media (max-width: 468px) {
+	.feedin {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+  .postin {
+  	width: 100%;
+  	padding: 0;
+  }
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
