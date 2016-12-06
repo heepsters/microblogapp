@@ -24,7 +24,7 @@
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
-
+		    <% if current_user %>
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		  <ul class="nav navbar-nav navbar-right">
 		   <li><a href="/sign_in">Home</a></li>
@@ -39,11 +39,11 @@
 		        <li><a href="#">Log Out</a></li>
 		      </ul>
 		    </li>
-
+		    <% else %>
 		   	<li><a href="/sign_in">Sign in</a></li>
 		  </ul>
 		</div><!-- /.navbar-collapse -->
-
+			<% end %>
 		  </div><!-- /.container-fluid -->
 		</nav>
 		<%= yield %>
