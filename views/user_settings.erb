@@ -1,11 +1,6 @@
-<form action="/user_settings" id="edit" method="POST">
-<label for="fname">First name</label>
-		<input type="text" name="fname" value=<%= @user.fname %>>
-<!-- 		<input type="text" name="lname" value=<%= @user.lname %>>
-		<input type="email" name="email" value=<%= @user.email %>>
-		<input type="text" name="position" value=<%= @user.position %>>
-		<input type="text" name="education" value=<%= @user.education %>>
-		<input type="text" name="city" value=<%= @user.city %>>
-		<input type="text" name="quote" value=<%= @user.quote %>>
-		<input type="submit" name="update"> -->
+<form action="/edit" id="edit" method="POST">
+	<input type="text" name="fname" value=<%= @user.fname %>>
+	<input type="text" name="lname" value=<%= @user.lname %>>
+	<input type="password" name="password" value=<%= @user.password %>>
+	<input type="submit" value="update">
 </form>

@@ -10,6 +10,18 @@ body {
 	width: 100%;
 	letter-spacing: 2px;
 }
+li#signit {
+	list-style: none;
+}
+li#signit a {
+	float: right;
+	margin: 10px;
+	color: #e1eef6;
+	text-decoration: none;
+}
+li#signit a:hover {
+	color: #fcbe32;
+}
 .navbar-default1 {
 	background-color: none;
 }
