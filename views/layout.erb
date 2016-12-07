@@ -9,7 +9,8 @@
 		<link href="bootstrap-3.3.7/css/bootstrap.css" rel="stylesheet" media="screen">
 		<link rel="icon" type="image/png" href="images/dclogo.png">
 	</head>
-	<body>
+<body>
+	<div class="bodywrap">
 		<nav class="navbar navbar-default1">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -43,13 +44,15 @@
 			<% end %>
 		  </div><!-- /.container-fluid -->
 		</nav>
-		<%= yield %>
-		<div class="footer">
-			<p>&copy 2016 all rights reserved developerscloud.com</p>
-		</div>
+			<%= yield %>
+		
 	</div>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
-	</body>
+</body>
+	<div id="footer2">
+		<p>&copy 2016 all rights reserved developerscloud.com</p>
+	</div>
 </html>
