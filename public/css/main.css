@@ -9,6 +9,11 @@ body {
 	color: #333;
 	width: 100%;
 	letter-spacing: 2px;
+	height: 100%;
+}
+.bodywrap {
+	max-height:100%;
+	position:relative;
 }
 li#signit {
 	list-style: none;
@@ -54,7 +59,7 @@ a#logoimg img {
 	height: 425px;
 	background-color: inherit;
 	padding: 0 0 30px;
-	margin: 0 auto;
+	margin: 0 auto 150px;
 	text-align: center;
 }
 .freesignup h2 {
@@ -93,17 +98,21 @@ input#signupbtn {
 	color: #e1eef6;
 }
 input#signupbtn:hover {
-	background-color: #ffcce6;
+	background-color: #fcbe32;
 	color: white;
 }
 
-.footer {
-	width: 100%;
-	padding: 2px 0;
+#footer2 {
+	background-color:#ffab62;
+	width:100%;
+	height: auto;
+	padding: 20px 0;
+	margin: 20px 0 0;
 	text-align: center;
-	color: white!important;
-	position: absolute;
-	bottom: 0;
+	color: white;
+}
+#footer2 p {
+	margin: 0;
 }
 
 /* home feed page styles */
@@ -230,7 +239,9 @@ button.postbtn:hover{
 		width: 100%;
 		border-radius: 0px;
 	}
-
+	li#signit a {
+		display: none;
+	}
 }
 @media (min-width: 768px) {
 
