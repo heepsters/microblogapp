@@ -101,6 +101,7 @@ post '/save_post' do
   @post = Post.create(content: params[:content], user_id: current_user.id)
   @user = User.fname
   
+  
 end
 
 ######################################################################
