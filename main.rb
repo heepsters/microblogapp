@@ -104,6 +104,7 @@ end
 ######################################################################
 get '/user_settings'  do
     @user = current_user
+    
     erb :user_settings
 end
 
