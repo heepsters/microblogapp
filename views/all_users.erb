@@ -1,0 +1,7 @@
+<% @user.each do |user| %>
+	<div>
+		<%= user.fname %> <%= user.lname %>
+		<br>
+		<a href="/user_profile/<%= user.id %>">Check out my account</a>
+	</div>
+<% end %>

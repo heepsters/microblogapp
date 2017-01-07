@@ -1,70 +1,11 @@
-<div class="feedin">
-	<div class="postin">
-		<img src="images/heeps.jpg">
-		<h4>Isaac Hipa Toleafoa</h4>
-		<div class="postarea">
-			<textarea placeholder="What's on your mind?" id="postarea"></textarea>
-		</div>
-		<button class="postbtn" id="pb">Post</button>
+<a href="/create_post">Make a post</a>
+
+<% @posts.each do |post| %>
+	<div>
+		<%= post.user.fname %>
+		<%= post.content %>
+		<br>
+		<a href="/editpost/<%= post.id %>" value="edit">Edit post</a> |
+		<a href="/deletepost/<%= post.id %>" value="delete">Delete post</a>
 	</div>
-</div>
-<div class="feedin">
-	<div class="postin">
-		<img src="images/heeps.jpg">
-		<h4>Isaac Hipa Toleafoa</h4>
-		<div class="postarea">
-			<textarea placeholder="What's on your mind?"></textarea>
-		</div>
-		<button class="postbtn">Post</button>
-	</div>
-</div>
-<div class="feedin">
-	<div class="postin">
-		<img src="images/heeps.jpg">
-		<h4>Isaac Hipa Toleafoa</h4>
-		<div class="postarea">
-			<textarea placeholder="What's on your mind?"></textarea>
-		</div>
-		<button class="postbtn">Post</button>
-	</div>
-</div>
-<div class="feedin">
-	<div class="postin">
-		<img src="images/heeps.jpg">
-		<h4>Isaac Hipa Toleafoa</h4>
-		<div class="postarea">
-			<textarea placeholder="What's on your mind?"></textarea>
-		</div>
-		<button class="postbtn">Post</button>
-	</div>
-</div>
-<div class="feedin">
-	<div class="postin">
-		<img src="images/heeps.jpg">
-		<h4>Isaac Hipa Toleafoa</h4>
-		<div class="postarea">
-			<textarea placeholder="What's on your mind?"></textarea>
-		</div>
-		<button class="postbtn">Post</button>
-	</div>
-</div>
-<div class="feedin">
-	<div class="postin">
-		<img src="images/heeps.jpg">
-		<h4>Isaac Hipa Toleafoa</h4>
-		<div class="postarea">
-			<textarea placeholder="What's on your mind?"></textarea>
-		</div>
-		<button class="postbtn">Post</button>
-	</div>
-</div>
-<div class="feedin">
-	<div class="postin">
-		<img src="images/heeps.jpg">
-		<h4>Isaac Hipa Toleafoa</h4>
-		<div class="postarea">
-			<textarea placeholder="What's on your mind?"></textarea>
-		</div>
-		<button class="postbtn">Post</button>
-	</div>
-</div>
+<% end %>

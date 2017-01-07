@@ -1,6 +1,10 @@
 <form action="/edit" id="edit" method="POST">
 	<input type="text" name="fname" value=<%= @user.fname %>>
 	<input type="text" name="lname" value=<%= @user.lname %>>
-	<input type="password" name="password" value=<%= @user.password %>>
+	<input type="text" name="email" placeholder="email" value=<%= @user.email %>>
+	<input type="text" name="language" placeholder="language" value=<%= @user.language %>>
+	<input type="text" name="experience" placeholder="experience" value=<%= @user.experience %>>
 	<input type="submit" value="update">
 </form>
+
+<a href="/deleteuser">Delete Account</a>
