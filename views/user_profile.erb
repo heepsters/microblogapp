@@ -1,51 +1,25 @@
 <div class="profilepage">
-	<img src="images/heeps.jpg">
+	<img src="<%= url("images/heeps.jpg") %>">
 	<div class="summary">
-		<%= @user.fname %>
-		<h4><strong>Owner & Founder at Disruptive Supplements</strong></h4>
-		<p>New York Code & Design Academy</p>
-		<p>Orem, Utah</p>
 		<br>
-		<p>"In order to succeed, we must first believe that we can."</p>
+		<%= @user.fname %> <%= @user.lname %>
+		<br>
+		<%= @user.email %>
+		<br>
+		<%= @user.language %>
+		<br>
+		<%= @user.experience %> 
 	</div>
 </div>
-<div class="feedin">
-	<div class="postin">
-		<img src="images/heeps.jpg">
-		<h4>Isaac Hipa Toleafoa</h4>
-		<div class="postarea">
-			<textarea placeholder="What's on your mind?"></textarea>
-		</div>
-		<button class="postbtn">Post</button>
+<div class="profileposts">
+	<% @posts.each do |post| %>
+	<div>
+		<%= post.user.fname %>
+		<%= post.content %>
+		<br>
+		<a href="/editpost/<%= post.id %>" value="edit">Edit post</a> |
+		<a href="/deletepost/<%= post.id %>" value="delete">Delete post</a>
 	</div>
+<% end %>
 </div>
-<div class="feedin">
-	<div class="postin">
-		<img src="images/heeps.jpg">
-		<h4>Isaac Hipa Toleafoa</h4>
-		<div class="postarea">
-			<textarea placeholder="What's on your mind?"></textarea>
-		</div>
-		<button class="postbtn">Post</button>
-	</div>
-</div>
-<div class="feedin">
-	<div class="postin">
-		<img src="images/heeps.jpg">
-		<h4>Isaac Hipa Toleafoa</h4>
-		<div class="postarea">
-			<textarea placeholder="What's on your mind?"></textarea>
-		</div>
-		<button class="postbtn">Post</button>
-	</div>
-</div>
-<div class="feedin">
-	<div class="postin">
-		<img src="images/heeps.jpg">
-		<h4>Isaac Hipa Toleafoa</h4>
-		<div class="postarea">
-			<textarea placeholder="What's on your mind?"></textarea>
-		</div>
-		<button class="postbtn">Post</button>
-	</div>
-</div>
+

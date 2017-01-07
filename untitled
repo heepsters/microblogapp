@@ -1,0 +1,6 @@
+<%= @posts.each do |post| %>
+	<%= post.user_id.fname %>
+	<%= post.content %>
+	<a href="/editpost" value="edit"></a>
+	<a href="/deletepost" value="delete"></a>
+<% end %>
