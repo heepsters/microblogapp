@@ -62,6 +62,8 @@ end
 #home shows the feed of posts from all users
 get '/home_feed'  do 
     @posts = Post.all
+    puts @posts.inspect
+    @user = current_user
     erb :home_feed
 end
 
@@ -113,7 +115,7 @@ end
 ######################################################################
 #This is the profile page and it shows all of the users posts as well as some details about them
 get '/user_profile'  do 
-    @posts = current_user.posts
+    @posts = current_user.posts.order(:id).first(10)
     @user = current_user
     erb :user_profile
 end
