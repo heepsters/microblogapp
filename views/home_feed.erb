@@ -1,6 +1,6 @@
 <a href="/create_post">Make a post</a>
 
-<% @posts.each do |post| %>
+<% @posts.last(10).each do |post| %>
 	<div>
 		<%= post.user.fname %>
 		<%= post.content %>
